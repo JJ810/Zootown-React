@@ -1,0 +1,38 @@
+.ChoosePlanEmployer {
+  .ChoosePlanEmployer__Description {
+    margin-top: 60px;
+  }
+}
+.ChoosePlanEmployer__Posts__Post {
+  width: 457px;
+  height: 397px;
+  border-radius: 10px;
+  background-color: #f5f4f4;
+  padding: 22px 30px;
+  margin: 17px auto;
+
+  .post-plan-title {
+    font-family: HelveticaNeue-CondensedBold;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: 1.21;
+    letter-spacing: 0.05px;
+    color: #000000;
+    margin-top: 40px;
+  }
+  .post-plan-desc {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.03px;
+    text-align: center;
+    color: #373333;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}

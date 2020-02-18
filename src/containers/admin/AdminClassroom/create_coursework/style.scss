@@ -1,0 +1,20 @@
+.adminclassroom-createnewcourse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &-createbtn {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    margin-left: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

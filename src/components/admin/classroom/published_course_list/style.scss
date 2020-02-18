@@ -1,0 +1,90 @@
+$fontFamily: "Helvetica Neue";
+.adminclassroom-publishedcourse-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #979797;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  &-section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-img {
+      width: 34px;
+      height: 25px;
+    }
+    &-text {
+      font-size: 13px;
+      line-height: 15px;
+      color: black;
+      font-family: $fontFamily;
+      margin-left: 10px;
+    }
+  }
+  &-section2 {
+    font-size: 13px;
+    line-height: 15px;
+    color: black;
+    font-family: $fontFamily;
+  }
+  &-section3 {
+    display: flex;
+    flex-direction: row;
+    &-btnedit {
+      width: 105px;
+      height: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 8pt;
+      line-height: 10pt;
+      font-weight: 500;
+      font-family: $fontFamily;
+      background-color: #7ed321;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      &:hover {
+        cursor: pointer;
+        color: #7ed321;
+        background-color: white;
+        border: 1px solid #7ed321;
+      }
+    }
+    &-btndisable {
+      width: 105px;
+      height: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 8pt;
+      line-height: 10pt;
+      font-weight: 500;
+      font-family: $fontFamily;
+      background-color: #fa0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      &:hover {
+        cursor: pointer;
+        color: #fa0000;
+        background-color: white;
+        border: 1px solid #fa0000;
+      }
+    }
+  }
+}
+
+.swal2-confirm {
+  font-family: "Times New Roman", Times, serif !important;
+  background-color: #3085d6 !important;
+}
+
+.swal2-cancel {
+  font-family: "Times New Roman", Times, serif !important;
+  background-color: #d33 !important;
+}

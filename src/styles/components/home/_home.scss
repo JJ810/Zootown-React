@@ -1,0 +1,260 @@
+$pimary-dark: #2d2d2d;
+$pimary-dark2: #696b6e;
+$pimary-light: #9d9d9d;
+$pimary-lighter: #e1e3e5;
+$pimary-lighter-2: #f2f3f2;
+$secodary: #c3c76a;
+$secodary-dark: #808346;
+$mblue: #007bff;
+
+
+.EstimateSaving{
+    display: flex;
+    justify-content: center;
+    @include breakpoint(480){
+        background: $pimary-lighter-2 !important;
+    }
+    &__Wrapper{
+    }
+    &__Title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__Zip{
+        margin: 0 auto;
+        max-width: 60%;
+    }
+    &__List{
+        display: flex;
+        margin-top: 20px;
+        @include breakpoint(640) {
+            flex-wrap: wrap;
+            &--Item{
+                width: 50%;
+                margin-bottom: 10px;
+            }
+        }
+        &--Item{
+            cursor: pointer;
+            &__Photo{
+                margin: 4px 15px;
+                border-bottom: 1px solid #BBB;
+            }
+            &__Detail{
+                border-radius: 3px;
+                border: 1px solid #BBB;
+                margin: 4px 15px;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+                    box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+                }
+                p{
+                    font-size: 12px;
+                    padding: 4px;
+                }
+                .Help{
+                    position: absolute;
+                    bottom: -36px;
+                    left: 46%;
+                    color: $pimary-dark2;
+                    font-size: 22px;
+                }
+            }
+            &__Active{
+                .EstimateSaving__List--Item__Detail{
+                    background: $pimary-lighter;
+                }
+            }
+        }
+    }
+    &__Calculate{
+        button{
+            margin-top: 20px;
+            background: $secodary;
+            color: white;
+            border-radius: 6px;
+            padding: 4px 50px;
+            &:hover{
+                background: $secodary-dark;
+            }
+        }
+    }
+    &__Step2, &__Step4{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        background: $pimary-lighter-2 !important;
+        @include breakpoint(480){
+            background: $pimary-lighter-2 !important;
+        }
+        &__Result{
+            border: 1.5px solid $pimary-dark2;
+            width: 250px;
+            background: white;
+            height: 250px;
+            border-radius: 50%;
+            padding: 30px;
+            margin: 0 auto;
+            font-weight: bold;
+            color: $pimary-dark2;
+            &--Number{
+                font-size: 70px;
+                color: $pimary-dark;
+                margin: -20px 0 0 0;
+            }
+        }
+        &__Finetune{
+            width: 260px;
+            margin: 0 auto;
+            color: white;
+            font-weight: bold;
+            background: black;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            p{
+                margin: 0 !important;
+            }
+            &--Title{
+                font-size: 20px;
+                border-bottom: 1px solid white;
+            }
+           
+        }
+    }
+    &__Step3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        &__Back{
+            color: $mblue;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    }
+}
+.StartSaving{
+    background: $pimary-lighter-2;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    &__Wrapper{
+    }
+    &__Title{
+        text-align: center;
+        &--1{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        &--2{
+            font-size: 20px;
+        }
+        &--3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    &__Step{
+        display: flex;
+        @include breakpoint(480){
+            flex-direction: column;
+            justify-content: center;
+            &--Item{
+                margin: 0 auto !important;
+                margin-bottom: 30px !important;;
+            }
+        }
+        &--Item{
+            max-width: 280px;
+            border: 1px solid #BBB;
+            background: white;
+            padding: 30px 10px 0px 10px;
+            text-align: center;
+            position: relative;
+            margin: 20px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        &--Number{
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 20px);
+            width: 40px;
+            height: 40px;
+            background: $secodary;
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 40px;
+            border-radius: 50%;
+        }
+    }
+}
+.CurentlyContract{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    &__Wrapper{
+    }
+    &__Title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__Title2{
+        p{
+            max-width: 200px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+    }
+    &__Signup{
+        button{
+            margin-top: 20px;
+            background: $secodary;
+            color: white;
+            border-radius: 6px;
+            padding: 4px 50px;
+            &:hover{
+                background: $secodary-dark;
+            }
+        }
+    }
+}
+
+.LoadingCalculate {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    &:after{
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        margin: 6px;
+        box-sizing: border-box;
+        border: 26px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-hourglass 1.2s infinite;
+    }
+    @keyframes lds-hourglass {
+        0% {
+            transform: rotate(0);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        50% {
+            transform: rotate(900deg);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        100% {
+            transform: rotate(1800deg);
+        }
+    }
+}
+
+ 
+  

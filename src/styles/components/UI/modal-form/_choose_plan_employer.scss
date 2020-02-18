@@ -1,0 +1,182 @@
+.ChoosePlanEmployer {
+  font-family: 'Helvetica Neue';
+  text-align: center;
+  &__Title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__Description {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+  &__Plans {
+    display: flex;
+    justify-content: center;
+    @include breakpoint(480) {
+      flex-direction: column;
+    }
+    &__Item {
+      &:nth-child(1) {
+        width: 28%;
+      }
+      &:nth-child(2) {
+        width: 32%;
+      }
+      &:nth-child(3) {
+        width: 40%;
+      }
+      @include breakpoint(480) {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 100%;
+        }
+        margin-bottom: 50px;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__Content {
+        margin-bottom: 60px;
+        height: 80%;
+        min-height: 310px;
+        @include breakpoint(480) {
+          margin-bottom: 5px;
+        }
+      }
+      &--Img {
+        max-width: 50px;
+        margin: 10px;
+        &--Medium {
+          max-width: 30px;
+          margin: 10px;
+          margin-top: 38px;
+        }
+      }
+      &--Title {
+        font-family: HelveticaNeue-CondensedBold;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 50px;
+        @include breakpoint(1024) {
+          font-size: 18px;
+        }
+      }
+      &--Description {
+        max-width: 250px;
+        margin: 0 auto;
+        font-size: 15px;
+        padding: 15px;
+      }
+      &--Price {
+        font-family: HelveticaNeue-CondensedBold;
+        font-size: 29px;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include breakpoint(1024) {
+          font-size: 20px;
+        }
+      }
+      &__Button {
+        margin: 0 auto;
+      }
+    }
+    &__Poster {
+      background: #f5f4f4;
+      border-radius: 10px 0 0 10px;
+      @include breakpoint(480) {
+        border-radius: 10px;
+      }
+    }
+    &__Talent {
+      background: #fed008;
+      position: relative;
+      border-radius: 0 0 0 10px;
+      &::before {
+        display: block;
+        width: 100%;
+        height: 40px;
+        content: '';
+        position: absolute;
+        background: #fed008;
+      }
+      &::before {
+        top: -40px;
+        border-radius: 10px 0 0 0;
+      }
+      &::after {
+        bottom: -20px;
+        border-radius: 0 0 0 10px;
+      }
+      @include breakpoint(480) {
+        border-radius: 10px;
+        &::before,
+        &::after {
+          content: unset;
+        }
+      }
+      .ChoosePlanEmployer__Plans__Item--Price {
+        margin-top: 12px;
+      }
+    }
+    &__Recruiter {
+      background: #ffdd48;
+      position: relative;
+      border-radius: 0 0 0 10px;
+      &::before {
+        display: block;
+        width: 100%;
+        height: 60px;
+        content: '';
+        position: absolute;
+        background: #ffdd48;
+      }
+      &::before {
+        top: -60px;
+        border-radius: 10px 10px 0 0;
+      }
+      &::after {
+        bottom: -40px;
+        border-radius: 0 0 10px 10px;
+      }
+      @include breakpoint(480) {
+        border-radius: 10px;
+        &::before,
+        &::after {
+          content: unset;
+        }
+      }
+    }
+  }
+  &__Jobs {
+    .option {
+      max-width: 1078px;
+      height: 104.7px;
+      border-radius: 10px;
+      background-color: #f5f4f4;
+      margin: 20px auto;
+      .option-title {
+        font-family: HelveticaNeue-CondensedBold;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: 1.21;
+        letter-spacing: 0.05px;
+        text-align: left;
+        color: #000000;
+        padding-left: 20px;
+      }
+      .option-desc {
+        padding-left: 10px;
+        text-align: left;
+      }
+    }
+  }
+  .Input__Label {
+    text-align: left;
+  }
+}

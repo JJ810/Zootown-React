@@ -1,0 +1,38 @@
+.BlogSection {
+  
+  .wave_background{
+    background: url('assets/images/common/wave_bg.png')  no-repeat center;
+    background-size: 105% 101%;
+    background-position-y: -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .section_title {
+      color: #000000;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.05px;
+      line-height: 29px;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 576px) {
+  
+}
+
+@media (max-width: 480px) {
+  
+}

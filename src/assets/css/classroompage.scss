@@ -1,0 +1,283 @@
+.classroom-page {
+  .dashboard {
+    &-title {
+      text-align: center;
+      margin-top: 70px;
+
+      color: #000000;
+      font-family: HelveticaNeue;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.05px;
+      line-height: 29px;
+    }
+
+    &-section1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+    }
+
+    .index-box {
+      text-align: center;
+      color: black;
+      margin-left: auto;
+      margin-right: auto;
+
+      &-text {
+        color: #000000;
+        font-family: HelveticaNeue;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+      }
+
+      &-value {
+        border-top: 5px solid #fed008;
+        font-size: 50px;
+        width: 70px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-section3 {
+      margin-top: 200px;
+      &-title {
+        margin-bottom: 100px;
+        text-align: center;
+        color: black;
+        font-family: HelveticaNeue;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23px;
+      }
+
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &-figure {
+      width: 33.3%;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &-desp {
+        border: 2px solid #dbdbdb;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        box-shadow: 0.2px 0.5px #d4d4d4;
+        font-weight: bold;
+        font-size: 17px;
+        color: black;
+        padding: 10px;
+      }
+      // @media (min-width: 768px) and (max-width: 1200px) {
+      //   width: 50%;
+      //   padding-bottom: 30px;
+      // }
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+    }
+
+    .show-more {
+      background: #fed008;
+      border: 3px solid #fed008;
+      color: black;
+      border-radius: 20px;
+      font-size: 14px;
+      padding: 8px 30px;
+      width: fit-content;
+      cursor: pointer;
+
+      &:hover {
+        background: white;
+      }
+    }
+    &-section4 {
+      margin-top: 100px;
+      &-title {
+        color: black;
+        font-family: HelveticaNeue;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: black;
+      }
+    }
+    .course-table {
+      width: 100%;
+      &-header {
+        border-radius: 2px;
+        background: #f5f4f4;
+        color: #6f6f6f;
+        margin-bottom: 20px;
+        display: flex;
+        height: 56px;
+        line-height: 56px;
+      }
+      &-row {
+        margin-bottom: 5px;
+        border-radius: 2px;
+        border: 1px solid #f5f4f4;
+        display: flex;
+        height: 56px;
+        line-height: 56px;
+      }
+      &-cell {
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        &-skill {
+          color: black;
+          border-radius: 14px;
+          background: #fed008;
+          width: 97px;
+          height: 27px;
+          text-align: center;
+          line-height: 25px;
+        }
+        &-status {
+          width: 133px;
+          height: 23px;
+          border-radius: 2px;
+          color: white;
+          text-align: center;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .classroom {
+    &-title {
+      margin-top: 60px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &-search {
+      display: flex;
+      margin-top: 50px;
+      &-category {
+        border: 1px solid #707070;
+        width: 221px;
+        height: 51px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 50px;
+        color: black;
+        &-icon {
+          float: right;
+          margin-top: 15px;
+          margin-right: 15px;
+        }
+      }
+    }
+    &-clear-button {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      color: black;
+      &:hover {
+        font-weight: bolder;
+        font-size: 15px;
+      }
+    }
+  }
+  .task {
+    border: 1px solid #707070;
+    padding: 30px 20% 30px 20px;
+    margin-top: 30px;
+    color: black;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    &-video {
+      padding: 10px;
+      border: 1px solid #dbdbdb;
+      width: 347px;
+      max-width: 347;
+      height: 209px;
+    }
+    &-user {
+      font-size: 14px;
+      font-weight: bold;
+      color: black;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    &-desc {
+      color: #4f4d4d;
+      width: 600px;
+      margin-top: 40px;
+    }
+    &-footer {
+      display: flex;
+    }
+    &-name {
+      font-size: 19px;
+      color: black;
+      font-weight: bold;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    &-button {
+      color: white;
+      font-size: 14px;
+      border: 2px solid #a4d321;
+      background: #a4d321;
+      border-radius: 23px;
+      padding: 10px 20px;
+      cursor: pointer;
+      &:hover {
+        background: white;
+        color: #a4d321;
+      }
+      margin-left: auto;
+    }
+
+    &-pagination {
+      display: flex;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      &-button {
+        cursor: pointer;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        margin: 5px;
+        &.active {
+          color: #fed008;
+        }
+        &:hover {
+          color: #fed008;
+        }
+      }
+    }
+  }
+}
+.courselevel {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  align-items: flex-end;
+  &-text {
+    color: black;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    font-family: "HelveticaNeue";
+  }
+}

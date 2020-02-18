@@ -1,0 +1,30 @@
+$fontFamily: "Helvetica Neue";
+.adminclassroom-statscourse-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #979797;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  &:hover {
+    background-color: #979797;
+    cursor: pointer;
+  }
+  &-cell {
+    &-label {
+      color: #bfbfbf;
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 12px;
+      font-family: $fontFamily;
+    }
+    &-value {
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      font-family: $fontFamily;
+      text-align: center;
+    }
+  }
+}

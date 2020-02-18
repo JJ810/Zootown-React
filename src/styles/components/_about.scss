@@ -1,0 +1,66 @@
+.AboutUs {
+  .about__header {
+    background-image: url('images/header_aboutus.png');
+    text-align: center;
+    // margin-top: 10px;
+    padding: 0 10%;
+    background-size: 100% 100%;
+    h4 {
+      font-size: 27px;
+      font-weight: 700;
+      letter-spacing: 0.06px;
+      line-height: 32px;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.03px;
+      line-height: 25px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      margin: 5px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.04px;
+      line-height: 19px;
+    }
+  }
+
+  .about_content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    .about__container {
+      margin-top: 100px;
+      div {
+        background-image: url('images/circless beauty.png');
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.05px;
+        line-height: 29px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.03px;
+        line-height: 22px;
+        text-align: left;
+      }
+
+      .youtube-player {
+        margin: 50px 0;
+      }
+    }
+  }
+}

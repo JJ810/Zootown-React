@@ -1,0 +1,25 @@
+.uploadpreview {
+  display: flex;
+  position: relative;
+}
+.uploadpreview-imagecontainer {
+  width: 139px;
+  height: 148px;
+  border-radius: 10px;
+  background-color: white;
+  filter: drop-shadow(0 0 45px rgba(128, 128, 128, 0.3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadpreview input[type="file"] {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0;
+}
+.uploadpreview-image {
+  max-width: 100%;
+  max-height: 100%;
+}

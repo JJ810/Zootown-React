@@ -1,0 +1,71 @@
+$fontFamily: "Helvetica Neue";
+.admin-teacherfooter {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #979797;
+  background-color: #f8f8f8;
+  box-shadow: 0 8px 2px -2px #979797;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: center;
+
+  margin-bottom: 50px;
+  &-teacherlabel {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    font-family: $fontFamily;
+    padding-bottom: 10px;
+  }
+  &-main {
+    display: flex;
+    flex-direction: row;
+  }
+  &-photo {
+    width: 139px;
+    height: 148px;
+    border: 1px solid #707070;
+    background-color: white;
+  }
+  &-infoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 100%;
+    &-name {
+      color: #f8d123;
+      font-size: 20px;
+      line-height: 25px;
+      font-family: $fontFamily;
+      font-weight: bold;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 40%;
+      &::placeholder {
+        color: #f8d123;
+        opacity: 0.3;
+        text-transform: uppercase;
+      }
+
+      margin-bottom: 10px;
+    }
+    &-intro {
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+      font-family: $fontFamily;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: none;
+      resize: none;
+      width: 70%;
+      &::placeholder {
+        opacity: 0.3;
+      }
+    }
+  }
+}

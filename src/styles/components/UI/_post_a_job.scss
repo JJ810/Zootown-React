@@ -1,0 +1,50 @@
+.PostAJobContent {
+  &__Header {
+    text-align: center;
+    padding-bottom: 40px;
+
+    h3 {
+      font-size: 24px;
+      letter-spacing: 0.05px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    // <p> elements that directly follow an <h3>.
+    h3 + p {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+    p {
+      font-family: HelveticaNeue;
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: 0.03px;
+      color: #373333;
+    }
+    .option {
+      border-radius: 10px;
+      background-color: #f5f4f4; 
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      h3 {
+        font-family: HelveticaNeue;
+        font-size: 17px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: 1.21;
+        letter-spacing: 0.05px;
+        color: #000000;
+      }
+      p {
+        text-align: left;
+        padding: 0 20px 0 40px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

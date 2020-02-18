@@ -1,0 +1,342 @@
+.SignupContent {
+  &__Header {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+
+    h3 {
+      font-size: 24px;
+      letter-spacing: 0.05px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    span {
+      color: #b4b4b4;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.03px;
+    }
+  }
+
+  &__Form {
+    display: flex;
+    flex-direction: column;
+
+    &__Head {
+      display: flex;
+
+      @include breakpoint(640) {
+        flex-direction: column;
+      }
+
+      &--Col {
+        flex-basis: 0;
+        flex: 1 1 0;
+        padding: 20px;
+      }
+    }
+
+    &__Body {
+      padding: 10px;
+
+      &--Row {
+      }
+
+      &--Flex {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+    &__Footer {
+      text-align: center;
+    }
+  }
+
+  .form-title {
+    text-transform: uppercase;
+    color: black !important;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  &__About {
+    border: 1px solid red;
+
+    &--Hobbies {
+      &--Left {
+        width: 30%;
+        padding-right: 10px;
+      }
+
+      &--Right {
+        width: 70%;
+
+        .button-action {
+          text-align: right;
+          padding: 5px;
+
+          .left,
+          .right {
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            line-height: 25px;
+            font-weight: bold;
+            margin-left: 5px;
+          }
+
+          .left {
+            background: $zt-dark;
+          }
+
+          .right {
+            background: black;
+          }
+        }
+
+        .hobbies-list {
+          .hobbies-list-wrap {
+            overflow-x: scroll;
+            display: flex;
+            flex-wrap: nowrap;
+
+            &::-webkit-scrollbar {
+              height: 0;
+              width: 0;
+              background: gray;
+            }
+
+            &::-webkit-scrollbar-thumb:horizontal {
+              background: #000;
+              border-radius: 10px;
+            }
+
+            .hobbies-item {
+              white-space: nowrap;
+              word-wrap: normal;
+              background: $zt-primary-dark;
+              margin-right: 10px;
+              padding: 3px;
+              padding-left: 10px;
+              position: relative;
+              padding-right: 30px;
+              border-radius: 15px;
+              cursor: pointer;
+
+              &:hover {
+                background: #e7b116;
+              }
+
+              &::after {
+                width: 16px;
+                top: 5px;
+                text-align: center;
+                line-height: 16px;
+                height: 16px;
+                color: $zt-primary-dark;
+                background: white;
+                content: 'x';
+                border-radius: 50%;
+                position: absolute;
+                right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &--Anylinks {
+      &--Left {
+        width: 30%;
+      }
+
+      &--Right {
+        width: 70%;
+
+        .button-action {
+          text-align: right;
+        }
+
+        .anylinks-list {
+          margin-top: 20px;
+          overflow-x: scroll;
+          display: flex;
+          flex-wrap: nowrap;
+
+          &::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+            background: gray;
+          }
+
+          &::-webkit-scrollbar-thumb:horizontal {
+            background: #000;
+            border-radius: 10px;
+          }
+
+          .anylinks-item {
+            white-space: nowrap;
+            word-wrap: normal;
+            background: $zt-light;
+            margin-right: 10px;
+            padding: 3px;
+            padding-left: 10px;
+            position: relative;
+            padding-right: 30px;
+            border-radius: 15px;
+
+            &:hover {
+              background: #ddd;
+            }
+
+            cursor: pointer;
+
+            &::after {
+              width: 16px;
+              top: 5px;
+              text-align: center;
+              line-height: 16px;
+              height: 16px;
+              color: $zt-light;
+              background: $zt-dark;
+              content: 'x';
+              border-radius: 50%;
+              position: absolute;
+              right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    &__Footer {
+      display: flex;
+      justify-content: space-between;
+      .resident {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__Submit {
+    margin: 20px;
+  }
+
+  &__Profile {
+    display: flex;
+    border: 1px solid red;
+
+    &__Left {
+      width: 50%;
+      padding-right: 50px;
+
+      .form-hint {
+        color: $zt-dark;
+      }
+
+      .form-upload {
+        .form-upload-btn {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: black;
+          text-align: center;
+          line-height: 30px;
+          font-size: 22px;
+          display: inline-block;
+          color: white;
+          margin-right: 20px;
+          cursor: pointer;
+
+          &:hover {
+            background: #373333;
+          }
+        }
+      }
+
+      .form-upload-list {
+        margin-top: 20px;
+        padding: 10px;
+
+        .form-upload-item {
+          .form-upload-item-icon {
+            width: 15px;
+            margin-right: 5px;
+          }
+
+          .form-upload-item-delete {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            text-align: center;
+            line-height: 15px;
+            margin-left: 3px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    &__Right {
+      width: 50%;
+
+      .profile-photo {
+        cursor: pointer;
+        width: 161px;
+        height: 124px;
+        background-color: #f8f6f6;
+        border: 1px solid #ebe6e6;
+        border-radius: 13.5px;
+        color: #bfbfbf;
+        text-align: center;
+
+        &:hover {
+          background: #ddd;
+        }
+
+        img {
+          margin-top: 30px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &__AddDegree {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    p {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+
+    span {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: black;
+      color: white;
+      border-radius: 50%;
+      margin-right: 10px;
+      line-height: 25px;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.container {
+ 
+ 
+   // padding: 30px 70px;
+  // background: #efefef;
+  .intro_block {
+    font-family: HelveticaNeue-CondensedBold;
+    
+    .hello_block {
+      margin-bottom: 0 !important;
+    }
+    .hello_text {
+      color: #fed008;
+
+      img {
+        width: 160px;
+        margin-top: -20px;
+      }
+      // line-height: 107px;
+    }
+    .zooTown_text {
+      color: #000000;
+      // margin-left: 20px;
+      text-transform: uppercase;
+      // position: absolute;
+      // left: 155px;
+      // top: 55px;
+      white-space: nowrap;
+      font-family: HelveticaNeue-CondensedBold;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: condensed;
+      line-height: 1.23;
+      letter-spacing: 0.14px;
+      text-align: left;
+      color: #000000;
+    }
+    // padding-top: 150px;
+    
+    .intro_desc {
+      font-family: HelveticaNeue;
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.73;
+      letter-spacing: 0.25px;
+      text-align: left;
+      color: #575050;
+    }
+  }
+  .student_intro_block {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+}

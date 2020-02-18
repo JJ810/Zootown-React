@@ -1,0 +1,25 @@
+@import "./breakpoint";
+body {
+  font-family: HelveticaNeue;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  background-color: #fed008;
+  color: white;
+  transform: translateY(-50%);
+}
+
+.Root-App {
+  margin-top: 135px;
+}
+.root {
+  overflow-x: hidden;
+}

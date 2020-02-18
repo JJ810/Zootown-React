@@ -1,0 +1,93 @@
+.Modal {
+  z-index: 999999;
+  // padding-bottom: 0 !important;
+  margin-bottom: 150px;
+  .ant-modal-content {
+    padding-top: 30px;
+  }
+  .ant-modal-header,
+  .ant-modal-footer {
+    border: 0 !important;
+  }
+}
+
+.ant-modal-mask {
+  &::after {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    content: '' !important;
+    display: block !important;
+    z-index: 9999;
+    background-color: #f5f5f5 !important;
+    opacity: 0.7252790178571429 !important;
+  }
+}
+
+.ant-modal-close-x {
+  i {
+    padding: 5px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.ModalSignup {
+  width: 90% !important;
+  max-width: 1240px;
+  min-width: 1024px;
+  @include breakpoint(640) {
+    width: calc(100% - 20px) !important;
+    margin-left: 5% !important;
+    top: 10px !important;
+  }
+}
+
+.ModalLogin {
+  width: 30% !important;
+}
+
+// .ModalForgotPassword {
+//    some CSS
+// }
+
+.ModalCVDoctor {
+  width: 60% !important;
+}
+
+.ModalChoosePlan {
+  width: 70% !important;
+  margin-bottom: 100px;
+}
+
+.ModalPostAJob {
+  width: 70% !important;
+}
+.ModalPostAnEvent {
+  width: 70% !important;
+}
+.ModalBespokenPlan {
+  width: 70% !important;
+}
+.ModalCheckout {
+  width: 40% !important;
+}
+.ModalPaymentSuccess {
+  width: 50% !important;
+}
+.ModalChoosePlanEmployer {
+  width: 70% !important;
+  top: 50px !important;
+  @include breakpoint(768) {
+    width: 100% !important;
+  }
+}
+.ModalChoosePlanSignup {
+  width: 70% !important;
+}

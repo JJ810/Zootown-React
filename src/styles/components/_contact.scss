@@ -1,0 +1,42 @@
+$mgreen: #001339;
+.Contact{
+    &__Content{
+        padding: 50px 200px;
+        text-align: center;
+        @include breakpoint(991){
+            padding: 50px 150px;
+        }
+        @include breakpoint(768){
+            padding: 50px 100px;
+        }
+        @include breakpoint(480){
+            padding: 50px;
+        }
+        h3{
+            color: $mgreen;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .row{
+            text-align: left;
+            .form-group{
+                textarea{
+                    height: 200px;
+                }
+            }
+            label{
+                margin-top: 10px;
+                span{
+                    color: red;
+                }
+            }
+            .submit{
+                button{
+                    width: 165px;
+                    background: #badb5f;
+                    border: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.Banner {
+  margin-top: 70px;
+  .row {
+    margin: 0;
+    .col-md-8,
+    .col-md-4 {
+      padding: 0;
+      height: 500px;
+    }
+  }
+  &__background {
+    height: 100%;
+    background-image: url("images/banner_header.jpg");
+    background-size: cover;
+    .banner_content {
+      padding: 150px 0;
+      .banner_title {
+        padding: 50px 150px;
+        background: rgba(0, 0, 0, 0.25);
+        .signup_now {
+          display: block;
+          padding: 10px 36px;
+          background: #c1ca62;
+          margin: 0 auto;
+          border-radius: 5px;
+          display: none;
+          font-size: 20px;
+          color: #fff;
+          &:hover{
+            background: white;
+            color: #badb5f;
+            border: 1px solid #badb5f
+          }
+        }
+        h1 {
+          margin: 0;
+          font-weight: 700;
+          color: #fff;
+          font-size: 45px;
+          span {
+            color: #badb5f;
+          }
+        }
+        p {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &__description {
+    height: 100%;
+    background: #001339;
+    .description_content {
+      color: #fff;
+      padding: 80px 65px;
+      font-size: 20px;
+      .content_check {
+        font-size: 17px;
+        margin: 40px;
+        i {
+          color: #badb5f;
+          margin-right: 15px;
+          font-size: 22px;
+        }
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .Banner {
+    &__background {
+      .banner_content {
+        .banner_title {
+          padding: 50px;
+          h1{
+            font-size: 35px;
+          }
+        }
+      }
+    }
+    &__description .description_content {
+      padding: 34px;
+      .content_check {
+        margin: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Banner {
+    .row {
+      .col-md-4 {
+        height: auto;
+      }
+    }
+    &__description .description_content {
+      padding: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .Banner {
+    .row {
+      .col-md-8 {
+        height: auto;
+      }
+    }
+    &__background {
+      .banner_content {
+        .banner_title {
+          padding: 50px 20px;
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Banner {
+    &__background {
+      .banner_content {
+        .banner_title {
+          .signup_now {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

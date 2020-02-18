@@ -1,0 +1,49 @@
+$mgreen: #001339;
+$pimary-dark: #efefef;
+$pimary-lighter: #e1e3e5;
+$secodary: #badb5f;
+.Faq{
+    &__Content{
+        padding: 50px 200px;
+        text-align: center;
+        @include breakpoint(991){
+            padding: 50px 150px;
+        }
+        @include breakpoint(768){
+            padding: 50px 100px;
+        }
+        @include breakpoint(480){
+            padding: 50px;
+        }
+        button {
+            width: 100%;
+            background: $pimary-dark;
+            color: $mgreen;
+            border: 0;
+            i{
+                float: left;
+                font-size: 26px;
+                color: $secodary;
+            }
+            &:hover{
+                border: 0;
+                background: $pimary-lighter;
+                border-color: $pimary-lighter !important;
+                color: $mgreen;
+            }
+        }
+        .card{
+            margin-bottom: 20px;
+        }
+        h3{
+            color: $mgreen;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+}
+.btn-secondary:not(:disabled):not(.disabled):active{
+    background: $pimary-lighter;
+    border-color: $pimary-lighter !important;
+    color: $mgreen;
+}

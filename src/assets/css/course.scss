@@ -1,0 +1,243 @@
+$fontFamily: "Helvetica Neue";
+
+.course1-section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &-imgcheck {
+    width: 26px;
+    height: 26px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  &-stick {
+    &-enable {
+      width: 293px;
+      height: 24px;
+      background-color: #fed008;
+      border: 1px solid #979797;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    &-disable {
+      width: 293px;
+      height: 24px;
+      background-color: white;
+      border: 1px solid #979797;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  &-imgbonus {
+    width: 38px;
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.course1-section2 {
+  align-items: center;
+  border: 1px solid #979797;
+}
+.course2-section2 {
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.course1-section3 {
+  &-title {
+    color: black;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: $fontFamily;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &-desp {
+    color: #4f4d4d;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: $fontFamily;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+.course1-section4 {
+  float: right;
+  &-nextbtn {
+    width: 184px;
+    height: 40px;
+    background-color: #a4d321;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      color: #a4d321;
+      background-color: white;
+      border: 1px solid #a4d321;
+    }
+  }
+}
+.course2-section4 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &-nextbtn {
+    width: 184px;
+    height: 40px;
+    background-color: #a4d321;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      color: #a4d321;
+      background-color: white;
+      border: 1px solid #a4d321;
+    }
+  }
+}
+.course1-section5 {
+  background-color: #f8f8f8;
+  border-color: #979797;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &-teacher-photo {
+    text-align: center;
+    &-title {
+      color: black;
+      font-size: 17px;
+      line-height: 21px;
+      font-family: $fontFamily;
+      padding-bottom: 10px;
+    }
+  }
+  &-teacher-about {
+    margin-left: 20px;
+    &-title {
+      color: #f8d123;
+      font-size: 17px;
+      line-height: 21px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &-desp {
+      color: black;
+      font-size: 15px;
+      line-height: 17px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.course3-question-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &-title {
+    color: #2f2e2e;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    font-family: $fontFamily;
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &-quiz {
+    color: #2f2e2e;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    font-family: $fontFamily;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  &-desp {
+    color: #2f2e2e;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 22px;
+    font-family: $fontFamily;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  &-answer {
+    color: black;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 22px;
+    font-family: $fontFamily;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+.course3-section4 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-nextbtn {
+    width: 184px;
+    height: 40px;
+    background-color: #a4d321;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      color: #a4d321;
+      background-color: white;
+      border: 1px solid #a4d321;
+    }
+  }
+  &-submitbtn {
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: $fontFamily;
+    background-color: #fed008;
+    border-radius: 20px;
+    border: 2px solid #fed008;
+    width: 184px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fed008;
+      background-color: white;
+    }
+  }
+}

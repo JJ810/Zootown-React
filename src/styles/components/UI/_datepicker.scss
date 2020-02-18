@@ -1,0 +1,17 @@
+
+.DatePicker {
+    &__Label {
+      height: 25px;
+      font-size: 12px;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    .ant-input {
+      border: 0 !important;
+      border-radius: 0 !important;
+      width: 100% !important;
+      border-bottom: 1px solid $zt-dark !important;
+    }
+  }
+  

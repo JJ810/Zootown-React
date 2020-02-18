@@ -1,0 +1,82 @@
+.LoginContent {
+  &__Header {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+
+    h3 {
+      font-size: 24px;
+      letter-spacing: 0.05px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    span {
+      color: #b4b4b4;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.03px;
+    }
+  }
+
+  &__Footer {
+    text-align: center;
+    margin-top: 20px;
+
+    h5,
+    p {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.03px;
+      line-height: 16px;
+    }
+
+    h5 {
+      color: #000000;
+    }
+
+    p {
+      opacity: 0.3958705357142857;
+    }
+
+    span {
+      cursor: pointer;
+      color: #e7b116;
+      opacity: 1;
+    }
+
+    .social {
+      margin-top: 30px;
+
+      img {
+        cursor: pointer;
+        width: 36px;
+        margin: 5px;
+        opacity: 0.26;
+      }
+    }
+  }
+
+  &__Form {
+    display: flex;
+    flex-direction: column;
+
+    &__Head {
+      display: flex;
+
+      @include breakpoint(640) {
+        flex-direction: column;
+      }
+
+      &--Col {
+        flex-basis: 0;
+        flex: 1 1 0;
+        padding: 20px;
+      }
+    }
+
+    &__Footer {
+      text-align: center;
+    }
+  }
+}

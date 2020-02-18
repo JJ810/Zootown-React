@@ -1,0 +1,125 @@
+.ChoosePlanSignupContent {
+  h2.price {
+    font-size: 29px !important;
+  }
+  &__Header {
+    text-align: center;
+    padding-bottom: 40px;
+
+    h3 {
+      text-transform: uppercase;
+      color: #000000;
+      font-family: HelveticaNeue;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.05px;
+      line-height: 29px;
+    }
+
+    p {
+      padding: 0 25% !important;
+      color: #575050;
+      font-family: HelveticaNeue;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+      line-height: 26px;
+    }
+  }
+
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .basic_membeship {
+      margin-right: -15px;
+      text-align: center;
+      margin-top: 12px;
+
+      button {
+        background-color: #fed008;
+        border-radius: 20px;
+        padding: 8px 12px;
+        margin-top: 20px;
+      }
+
+      .content {
+        background-color: #f5f4f4;
+        border-radius: 10px;
+        padding: 20px 0;
+        width: 365px;
+        height: 397px;
+        h2 {
+          text-transform: uppercase;
+          color: #000000;
+          font-family: HelveticaNeue-CondensedBold;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: 0.05px;
+          line-height: 29px;
+        }
+
+        p {
+          padding: 20px 25px;
+          color: #373333;
+          font-family: HelveticaNeue;
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: 0.03px;
+          line-height: 25px;
+        }
+
+        img {
+          width: 40px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    .premium_package {
+      text-align: center;
+
+      button {
+        background-color: #fed008;
+        border-radius: 20px;
+        padding: 8px 12px;
+        margin-top: 20px;
+      }
+
+      .content {
+        background-color: #fed008;
+        box-shadow: 0px 0px 50px -10px;
+        border-radius: 10px;
+        padding: 20px 0;
+        width: 402px;
+        height: 446px;
+        h2 {
+          text-transform: uppercase;
+          color: #000000;
+          font-family: HelveticaNeue-CondensedBold;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: 0.05px;
+          line-height: 29px;
+        }
+
+        p {
+          padding: 20px 25px;
+          color: #373333;
+          font-family: HelveticaNeue;
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: 0.03px;
+          line-height: 25px;
+        }
+
+        img {
+          width: 60px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

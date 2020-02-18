@@ -1,0 +1,104 @@
+$fontFamily: "Helvetica Neue";
+.adminclassroom-statsdetail-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #979797;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  &:hover {
+    cursor: default;
+  }
+  &-personinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &-avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+    }
+    &-name {
+      color: black;
+      font-size: 13px;
+      line-height: 17px;
+      font-weight: 500;
+      font-family: $fontFamily;
+      margin-left: 10px;
+    }
+    &-mail {
+      color: black;
+      font-size: 13px;
+      line-height: 30px;
+      font-weight: 700;
+      font-family: $fontFamily;
+    }
+    &-date {
+      color: black;
+      font-size: 13px;
+      line-height: 30px;
+      font-weight: 500;
+      font-family: $fontFamily;
+    }
+    &-btnstatus {
+      width: 103px;
+      height: 23px;
+      color: white;
+      background-color: #eb0000;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500;
+      font-family: $fontFamily;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.adminclassroom-statsdetail-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #fed008;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  &:hover {
+    cursor: default;
+  }
+  &-cell {
+    &-label {
+      color: #bfbfbf;
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 12px;
+      font-family: $fontFamily;
+    }
+    &-value {
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      font-family: $fontFamily;
+      text-align: center;
+    }
+  }
+}
+.adminclassroom-statsdetail-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-label {
+    color: #bfbfbf;
+    font-size: 9px;
+    line-height: 11px;
+    font-family: $fontFamily;
+    font-weight: bold;
+  }
+  &-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,224 @@
+.Review {
+  margin-top: 100px;
+  margin: 50px auto;
+  width: 80%;
+  .review_title {
+    margin-top: 30px;
+    font-family: HelveticaNeue;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 0.05px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .review_text {
+    margin-bottom: 60px;
+    padding: 0 200px;
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 0.03px;
+    text-align: center;
+    color: #575050;
+  }
+
+  .review_block_employee {
+    .review_content {
+      max-width: 365px !important;
+      height: 500px !important;
+      padding: 20px !important;
+      img:first-child {
+        margin-top: -50px !important;
+      }
+      .review_name {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .review_subname {
+        color: #222020;
+        font-family: HelveticaNeue;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.03px;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .review_block,
+  .review_block_employee {
+    border: #000000;
+
+    .review_content {
+      z-index: 1;
+      box-shadow: 0 5px 34px 0 rgba(0, 0, 0, 0.07);
+
+      padding: 10px;
+      background-color: #fff;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 3px;
+      max-width: 268px;
+      height: 300px;
+      img:first-child {
+        margin-top: -40px;
+      }
+      p.benefit_content {
+        font-family: HelveticaNeue;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.53;
+        letter-spacing: 0.03px;
+        text-align: left;
+        color: #7e7e7e;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+
+      .review_name {
+        font-family: HelveticaNeue;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.21;
+        letter-spacing: 0.03px;
+        text-align: left;
+        color: #000000;
+      }
+
+      .review_arrow {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgb(255, 231, 199);
+      }
+
+      .review_mail {
+        font-family: HelveticaNeue;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.17;
+        letter-spacing: 0.03px;
+        text-align: left;
+        color: #b4b4b4;
+      }
+    }
+  }
+}
+
+.BenefitsSection {
+  margin-top: 100px;
+  margin: 0 auto;
+  width: 80%;
+
+  .section_title {
+    margin-top: 30px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.05px;
+    line-height: 29px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .benefit_section {
+    .carousel-inner {
+      .row {
+        padding: 30px;
+      }
+    }
+
+    width: 100%;
+
+    // padding: 40px 20px;
+    .benefit_block {
+      background-color: #ffffff;
+      border-radius: 17px;
+      padding: 20px;
+      box-shadow: 0 5px 34px 0 rgba(0, 0, 0, 0.07);
+      text-align: center;
+      //margin-bottom: 30px;
+      height: 275px;
+    }
+
+    .title {
+      color: #000000;
+      font-family: HelveticaNeue;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.05px;
+      line-height: 24px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .benefit_content {
+      color: #6f6f6f;
+      font-family: HelveticaNeue;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.03px;
+      line-height: 25px;
+      margin-top: 10px;
+    }
+
+    .carousel-indicators li {
+      background-color: #d8d8d8;
+      border-radius: 100%;
+      width: 14px;
+      height: 14px;
+    }
+
+    .carousel-indicators .active {
+      background-color: #fed008;
+    }
+
+    .carousel-item {
+      padding: 40px 20px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+}
+.review_wrapper {
+  position: relative;
+}
+.path-background {
+  background-image: url('/assets/images/path-bg.png');
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  top: -120px;
+  height: 1800px;
+  z-index: -1;
+  margin: 0px;
+  left: 0;
+  margin-left: calc((1440px - 100vw) / 2);
+  background-size: 110% 100%;
+}

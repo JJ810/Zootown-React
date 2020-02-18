@@ -1,0 +1,392 @@
+.Header {
+  $pimary-dark: #2d2d2d;
+  $pimary-dark2: #696b6e;
+  $pimary-light: #9d9d9d;
+  $pimary-lighter: #e1e3e5;
+  $pimary-blue: #c1ca62;
+  .signup_link {
+    // margin-top: 10px;
+    background-color: #fed008;
+    border-radius: 12px;
+    width: 115px;
+    height: 34px;
+    color: #ffffff;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.23px;
+    line-height: 11.5px;
+    text-align: center;
+    padding: 10px 30px !important;
+  }
+  .Navbar__Menu__Cv {
+    box-shadow: #2d2d2d;
+  }
+  .signup_link:hover,
+  .login_link:hover {
+    cursor: pointer;
+    //cursor: hand;
+  }
+
+  .scrolled {
+    // background-color: #696b6e !important;
+  }
+  .Navbar {
+    padding: 30px 144px 20px 144px;
+    z-index: 999;
+    display: flex;
+    position: relative;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+    background: white;
+
+    @include breakpoint(991) {
+      &__Menu {
+        &__Item {
+          padding: 15px !important;
+          padding-top: 15px !important;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    @include breakpoint(768) {
+      flex-direction: column;
+      height: unset;
+
+      &__Logo {
+        margin-top: 10px;
+      }
+
+      &__Menu {
+        justify-content: space-between;
+        flex-grow: 1 0;
+        width: 100%;
+        &__Item {
+          flex-grow: 1;
+        }
+        .menu_links {
+          width: 100%;
+        }
+      }
+    }
+
+    @include breakpoint(480) {
+      &__Contact {
+        display: block !important;
+        background: $pimary-dark2;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      &__Signup {
+        display: block !important;
+        text-align: center;
+        padding: 10px;
+
+        button {
+          width: 120px;
+          height: 30px;
+          border-radius: 20px;
+          color: white;
+          background: $pimary-blue;
+        }
+      }
+
+      &__Menu {
+        display: none !important;
+      }
+
+      &__Logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &__Hamburger {
+          width: 30px;
+          display: block !important;
+        }
+
+        &__Main {
+          display: flex;
+          margin-bottom: 10px;
+          justify-content: space-around;
+        }
+      }
+    }
+
+    &__Contact,
+    &__Signup {
+      display: none;
+    }
+
+    &__Logo {
+      img {
+        max-width: 110px;
+      }
+
+      &__Hamburger {
+        display: none;
+      }
+    }
+
+    &__Menu {
+      margin-bottom: 0;
+      display: flex;
+      align-items: baseline;
+      list-style-type: none;
+      padding: 0;
+      justify-content: center;
+      // margin-right: 80px;
+      // justify-content: space-between;
+      width: 100%;
+      .menu_links {
+        flex-grow: 2;
+        .Navbar__Menu {
+          justify-content: center;
+
+          .Navbar__Menu__Item {
+            padding: 20px 15px;
+            white-space: nowrap;
+          }
+        }
+      }
+      &__Cv {
+
+        font-weight: 600;
+        padding: 20px;
+        cursor: pointer;
+
+        &--Active a {
+          color: #b4b4b4;
+        }
+
+        .cv-doctor {
+          display: inline-block;
+          margin-right: 20px;
+          position: relative;
+          padding: 14px 42px 12px 0px;
+          text-align: right;
+          padding-left: 55px;
+          border-radius: 12px;
+          width: 195px;
+          height: 45px;
+          border-radius: 12px;
+          background-image: linear-gradient(124deg, #ffea13, #fed008);
+
+          font-size: 17px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.2;
+          letter-spacing: 0.25px;
+          color: #554e4e;
+
+          .doc_img {
+            width: 38px;
+            position: absolute;
+            top: -7px;
+            left: 10px;
+          }
+
+          .circle-upload {
+            position: absolute;
+            top: 24px;
+            width: 19px;
+            left: 33px;
+          }
+        }
+
+        a {
+          color: #554e4e;
+          font-family: 'HelveticaNeue';
+          font-size: 15px !important;
+          // font-weight: bold;
+          letter-spacing: 0.25px;
+          line-height: 18px;
+          background-image: linear-gradient(160.82deg, #ffea13 0%, #fed008 100%);
+          border-radius: 12px;
+          padding: 8px 40px 12px 9px !important;
+          box-shadow: 0 5px 34px 0 rgba(0, 0, 0, 0.07);
+          margin-left: 20px;
+          margin-right: 100px;
+          margin-top: -7px;
+        }
+      }
+
+      &__Item_Aboutus {
+        .Students {
+          font-family: HelveticaNeue;
+          font-size: 13px;
+          font-weight: bold !important;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.23;
+          letter-spacing: 0.22px;
+          text-align: left;
+          color: #fed008 !important;
+        }
+
+        font-family: HelveticaNeue;
+        // font-weight: 600;
+        padding: 20px 15px;
+        white-space: nowrap;
+        &--Active a {
+          color: #fed008;
+        }
+
+        a {
+          color: white;
+
+          &:hover {
+            color: #b4b4b4;
+            text-decoration: none;
+          }
+        }
+
+        img {
+          width: 20px;
+        }
+      }
+      &__Item {
+        .Students {
+          font-family: HelveticaNeue;
+          font-size: 13px;
+          font-weight: bold !important;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.23;
+          letter-spacing: 0.22px;
+          text-align: left;
+          color: #fed008 !important;
+        }
+
+        font-family: HelveticaNeue;
+        // font-weight: 600;
+        padding: 20px;
+        cursor: pointer;
+        font-family: HelveticaNeue;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.15;
+        letter-spacing: 0.22px;
+        &--Active a {
+          color: #b4b4b4;
+        }
+
+        a {
+          color: black;
+
+          &:hover {
+            color: #b4b4b4;
+            text-decoration: none;
+          }
+        }
+
+        img {
+          width: 20px;
+        }
+      }
+
+      &__Mobile {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        width: 100%;
+        bottom: 0;
+        display: none;
+        text-align: center;
+
+        @include breakpoint(768) {
+          display: block;
+        }
+
+        &--Close {
+          padding: 10px;
+          text-align: right;
+          font-weight: bold;
+          font-size: 22px;
+        }
+
+        &--Action {
+          height: 65px;
+          border-bottom: 2px solid;
+          border-top: 2px solid;
+          font-weight: bold;
+          display: flex;
+          font-size: 25px;
+
+          div {
+            line-height: 60px;
+            flex-grow: 1;
+            text-align: center;
+          }
+
+          &--Login {
+            border-right: 1px solid;
+
+            a {
+              color: #fff;
+            }
+          }
+
+          &--Signup a {
+            color: #fff;
+          }
+        }
+
+        &--Menu {
+          a {
+            color: black;
+
+            p {
+              padding: 0;
+              padding: 8px;
+              color: #fff;
+              font-size: 18px;
+              border-bottom: 0.1px solid;
+              margin: 0;
+            }
+          }
+
+          .card {
+            border: 0;
+            background: rgba(0, 0, 0, 0.25);
+            color: #fff;
+
+            .card-body {
+              padding: 0;
+            }
+          }
+        }
+
+        &--Bold {
+          font-weight: bold;
+        }
+
+        .Menu_Mobile_Itiem {
+          padding: 20px;
+          margin-bottom: 0;
+          border-bottom: 2px solid;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

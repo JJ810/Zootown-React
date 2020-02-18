@@ -1,0 +1,48 @@
+$mgreen: #001339;
+.Login{
+    &__Content{
+        padding: 120px 200px;
+        text-align: center;
+        @include breakpoint(991){
+            padding: 120px 50px;
+        }
+        @include breakpoint(768){    
+            padding: 150px 100px 100px;
+        }
+        @include breakpoint(480){
+            padding: 150px 50px 50px;
+        }
+        h3{
+            color: $mgreen;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .row{
+            text-align: left;
+            .form-group{
+                textarea{
+                    height: 200px;
+                }
+            }
+            label{
+                margin-top: 10px;
+                span{
+                    color: red;
+                }
+            }
+            .col-md-6{
+                padding: 20px;
+                border: 1px solid #9d9d9d;
+                border-radius: 4px;
+            }
+            .submit{
+                margin-top: 15px;
+                button{
+                    width: 165px;
+                    background: #badb5f;
+                    border: 0;
+                }
+            }
+        }
+    }
+}

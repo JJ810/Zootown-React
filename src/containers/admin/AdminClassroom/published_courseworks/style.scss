@@ -1,0 +1,81 @@
+$fontFamily: "Helvetica Neue";
+
+.adminclassroom-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  &-title {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    font-family: "HelveticaNeue";
+  }
+
+  &-searchbar {
+    width: 342px;
+    border-bottom: 1.5px solid #676767;
+  }
+}
+
+.adminclassroom-published {
+  margin-top: 50px;
+  &-listtitle {
+    border-bottom: 2px solid #676767;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &-itemon {
+      cursor: pointer;
+      color: #fed008;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: $fontFamily;
+      line-height: 16px;
+    }
+    &-itemoff {
+      cursor: pointer;
+      color: black;
+      opacity: 0.22;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: $fontFamily;
+      line-height: 16px;
+    }
+  }
+  &-rowtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-label {
+      color: #bfbfbf;
+      font-size: 9px;
+      font-weight: bold;
+      line-height: 11px;
+      font-family: $fontFamily;
+    }
+  }
+  &-pagenation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &-btn {
+      width: 137px;
+      height: 40px;
+      color: white;
+      background-color: #fed008;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      &:hover {
+        color: #fed008;
+        background-color: white;
+        border: 1px solid #fed008;
+        cursor: pointer;
+      }
+    }
+  }
+}

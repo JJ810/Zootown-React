@@ -1,0 +1,20 @@
+.classroom-nav {
+  background-color: #fedb45;
+  -webkit-box-shadow: 0px 22px 26px -31px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 22px 26px -31px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 22px 26px -31px rgba(0, 0, 0, 0.55);
+  border-top: 1px solid lightgrey;
+}
+
+a {
+  background-color: #fedb45;
+}
+
+.text-yellow {
+  color: #fedb45;
+}
+
+a.text-yellow:hover,
+a.text-yellow:focus {
+  color: #fedb45 !important;
+}

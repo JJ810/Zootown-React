@@ -1,0 +1,50 @@
+.CheckoutContent {
+  text-align: center;
+  &__Header {
+    h3 {
+      color: #000000;
+      font-family: HelveticaNeue;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.05px;
+    }
+  }
+  &__Form {
+    display: flex;
+    flex-direction: column;
+
+    &__Head {
+      margin-top: 30px;
+    }
+    &__Body {
+      padding: 0 10%;
+      margin-top: 30px;
+      input {
+        margin-bottom: 15px;
+      }
+      .Input__Label {
+        text-align: left;
+      }
+      &--Flex {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__Footer {
+    button {
+      margin-top: 50px;
+      margin: 5px;
+      padding: 10px 30px;
+      background-color: #fed008;
+      border-radius: 25.5px;
+      color: #000000;
+      font-family: HelveticaNeue;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.03px;
+      line-height: 17px;
+    }
+  }
+}

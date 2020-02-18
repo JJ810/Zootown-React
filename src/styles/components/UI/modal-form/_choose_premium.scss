@@ -1,0 +1,101 @@
+.ChoosePremium {
+  .ant-input {
+    background-color: #f5f4f4;
+  }
+
+  &__Header {
+    text-align: center;
+    padding-bottom: 40px;
+
+    h3 {
+      text-transform: uppercase;
+      color: #000000;
+      font-family: HelveticaNeue;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.05px;
+      line-height: 29px;
+    }
+
+    p {
+      padding: 0 25% !important;
+      color: #575050;
+      font-family: HelveticaNeue;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+      line-height: 26px;
+    }
+  }
+
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .credit_card {
+      margin-left: -100px;
+      padding: 40px;
+      text-align: center;
+      margin-top: 12px;
+      background-color: #f5f4f4;
+      border-radius: 10px;
+
+      .header_choose {
+        .checkout_btn {
+          margin-top: 40px;
+          padding: 10px 20px;
+          background-color: #fed008;
+          border-radius: 25.5px;
+          color: #000000;
+          font-family: HelveticaNeue;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.03px;
+          line-height: 17px;
+        }
+
+        .Input__Label {
+          text-align: left;
+        }
+      }
+    }
+
+    .premium_package {
+      text-align: center;
+      z-index: 100;
+
+      .content {
+        background-color: #fed008;
+        border-radius: 10px;
+        padding: 20px 5px;
+
+        h2 {
+          text-transform: uppercase;
+          color: #000000;
+          font-family: HelveticaNeue;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: 0.05px;
+          line-height: 29px;
+        }
+
+        p {
+          padding: 0 20px;
+          color: #373333;
+          font-family: HelveticaNeue;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.03px;
+          line-height: 25px;
+        }
+
+        img {
+          width: 60px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
